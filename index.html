@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="robots" content="all,follow">
+    <meta name="googlebot" content="index,follow,snippet,archive">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Obaju e-commerce template">
+    <meta name="author" content="Ondrej Svestka | ondrejsvestka.cz">
+    <meta name="keywords" content="">
+
+    <title>
+        ECOMMERCE CARO
+    </title>
+
+    <meta name="keywords" content="">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100' rel='stylesheet' type='text/css'>
+
+    <!-- styles -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="dist.css">
+
+    <!-- theme stylesheet -->
+    <link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+
+    <!-- your stylesheet with modifications -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <script src="js/respond.min.js"></script>
+
+    <link rel="shortcut icon" href="favicon.png">
+
+
+     <script type="text/javascript">
+        function MostrarLogo(div)
+        {
+            $(div).find(".logoGris").css({opacity: "0", display: "none"});
+            $(div).find(".logoColor").css({opacity: "1", display: "inline"});
+        }
+        
+        function QuitarLogo(div)
+        {
+            $(div).find(".logoColor").css({opacity: "0", display: "none"});
+            $(div).find(".logoGris").css({opacity: "1", display: "inline"});
+        }
+    </script>
+    
+    
+     
+    <style>
+
+       
+        
+              
+/******************** imag fade in ******************/
+  
+         .logoGris
+          {
+              opacity: 1;
+              display: inline;
+          }
+          
+          .logoColor
+          {
+              opacity: 0;
+              display: none;
+          }
+        
+        
+        
+        
+/******************** Polaroid efectos ******************/
+
+    .polaroid-images a{
+        background: white;
+        display: inline;
+        float: left;
+        margin: 0 14px 30px;
+        padding: 10px 10px 25px;
+        text-align: center;
+        text-decoration: none;
+        -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+        -moz-box-shadow: 0 4px 6px rgba(0,0,0,.3);
+        box-shadow: 0 4px 6px rgba(0,0,0,.3);
+        -webkit-transition: all .15s linear;
+        -moz-transition: all .15s linear;
+        transition: all .15s linear;
+        z-index:0;
+        position:relative;
+}
+        
+    .polaroid-images a:after {
+        color: #333;
+        font-size: 20px;
+        content: attr(title);
+        position: relative;
+        top:15px;
+}
+        
+    .polaroid-images img { 
+        display: block; 
+        width: inherit; 
+}
+        
+    .polaroid-images a:nth-child(2n){
+        -webkit-transform: rotate(4deg);  
+        -moz-transform: rotate(4deg); 
+        transform: rotate(4deg); 
+}
+.polaroid-images a:nth-child(3n) { 
+	-webkit-transform: rotate(-24deg);  
+	-moz-transform: rotate(-24deg); 
+	transform: rotate(-24deg); 
+}
+        
+.polaroid-images a:nth-child(4n){
+	-webkit-transform: rotate(14deg);  
+	-moz-transform: rotate(14deg); 
+	transform: rotate(14deg); 
+}
+.polaroid-images a:nth-child(5n)
+{
+	-webkit-transform: rotate(-18deg);  
+	-moz-transform: rotate(-18deg); 
+	transform: rotate(-18deg); 
+}
+        
+        .polaroid-images a:hover{
+	-webkit-transform: rotate(0deg); 
+	-moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+	-webkit-transform: scale(1.2); 
+	-moz-transform: scale(1.2);
+        transform: scale(1.2);
+	z-index:10;
+	-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+	-moz-box-shadow: 0 10px 20px rgba(0,0,0,.7);
+        box-shadow: 0 10px 20px rgba(0,0,0,.7);
+}
+       
+        
+        
+        
+  /******************** Parallax banner ******************/    
+      
+        .prlx{
+        background-size:cover !important;
+        padding:8em 0;
+        margin-bottom:6em;
+        position:relative
+        }
+        
+        .prlx .overlay{
+        position:absolute;
+        background: rgba(0,0,0,0.3);
+        top:0;
+        left:0;
+        width:100%;
+        height:100%
+        }
+        
+        .prlx h3{
+        color:#fff;
+            margin-top: -50px;
+            margin-bottom: 50px;
+        text-align:center;
+        font-size:2.2em;
+        position:relative;
+        z-index:999;
+        text-shadow:0px 1px 8px rgba(0,0,0,0.4);
+        }
+        
+        .prlx#desarrollo{
+        background:url(img/parallax-blog.jpg) no-repeat center center fixed}
+        
+        
+        
+        
+    /******************** Fotografìas instagram ******************/  
+     
+        
+        .instagram h2{
+            color: #8e8c8c;
+            margin-bottom: 50px;
+        }
+        
+    ul.galeria, ul.galeria > li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.galeria {
+    
+}
+
+ul.galeria > li {
+    outline: 0px 0px solid;
+    float: left;
+}
+@media(max-width:639px){
+    ul.galeria > li {
+        width: 25%;
+    }
+}
+@media(min-width:640px){
+    ul.galeria > li {
+        width: 33.33333333333333%;
+    }
+}
+@media(min-width:768px){
+    ul.galeria > li {
+        width: 14.13%;
+    }
+}
+@media(min-width:992px){
+    ul.galeria > li {
+        width: 14.13%;
+    }
+}
+@media(min-width:1200px){
+    ul.galeria > li {
+        width: 14.13%;
+    }
+}
+
+
+ul.galeria > li img {
+    width: 100%;
+}
+
+div.row {
+     
+}
+
+
+.no-gutter [class^="col-"] {
+    padding-left:0;
+    padding-right:0;
+}
+    
+        
+        
+        
+             
+    /******************** IMG CIRCULAR ******************/     
+
+#div2 {
+    opacity: 0.8;
+    z-index: 1;
+    position: absolute;
+    width: 330px;
+    height: 60px;
+    top: 190px;
+    background-color: #fff;
+    text-align: center;
+}
+    
+#div2  h4{
+   margin-top: 21px;
+}
+        
+.grow img {
+  width: 300px;
+  height: 300px;
+  border-radius:300px;
+  overflow:hidden;
+  position:relative;
+  z-index:1;
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+
+}
+ 
+.grow:hover img{
+  -webkit-transform:scale(1.1);
+  transform:scale(1.1);
+}
+        
+
+
+ .circle{
+  width:300px;
+  height:300px;
+  border-radius:300px;
+  overflow:hidden;
+  position:relative;
+  z-index:1;
+  
+  
+  img{
+    -webkit-transition:all .2s ease;
+            transition:all .2s ease;
+      -moz-transition: all .2s ease;
+       -o-transition: all .2s ease;
+      -ms-transition: all .2s ease;
+       
+  }
+}
+
+.circle:hover img{
+  -webkit-transform:scale(1.1);
+  transform:scale(1.1);
+}
+
+        
+        
+        
+        
+  /*  CAPTION SLIDELINK   **/
+        
+#site-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Navbar Menu Component */
+
+.menu2 {
+  width: 320px;
+  height: 100%;
+  background: #333;
+  position: fixed;
+  top: 0;
+  right: -320px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transform: translateX(0) translateZ(0);
+  transform: translateX(0) translateZ(0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.3s cubic-bezier(0.32, 1.25, 0.375, 1.15);
+  transition: all 0.3s cubic-bezier(0.32, 1.25, 0.375, 1.15);
+  z-index: 10;
+    box-shadow: 0 -1px 1px -1px #fff;
+}
+
+       
+.menu2.show-nav {
+  -webkit-transform: translateX(-320px);
+  -ms-transform: translateX(-320px);
+  transform: translateX(-320px);
+  -webkit-transform: translateX(-320px) tranlateZ(0);
+  -ms-transform: translateX(-320px) tranlateZ(0);
+  transform: translateX(-320px) tranlateZ(0);
+  -webkit-transform: translate3d(-320px, 0, 0);
+  transform: translate3d(-320px, 0, 0);
+}
+
+ .menu2 h3 {
+  color:  #fff;
+   
+     margin-left: 30px;
+    margin-top:30px;
+  margin: center;
+  padding: center;
+}  
+        
+        
+         .menu2 h5 {
+  color:  #fff;
+     
+  margin: center;
+  padding: center;
+}      
+   
+        
+ 
+        
+.menu2 ul {
+  margin: 0;
+  padding: 0;
+}
+
+.menu2 ul li {
+  display: inline;
+  margin: 0 auto;
+  padding: 10px 0px;
+  text-align: center;
+  border-top: 1px solid #333;
+ 
+}
+
+
+.no-touch .menu2 ul li a:hover:after {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  visibility: visible;
+}
+
+.menu2 p {
+  color: #fff;
+  
+}
+
+
+.nav-toggle {
+  position: fixed;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transform: translateX(0) translateZ(0);
+  transform: translateX(0) translateZ(0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.4s cubic-bezier(0.32, 1.25, 0.375, 1.15);
+  transition: all 0.4s cubic-bezier(0.32, 1.25, 0.375, 1.15);
+  z-index: 11;
+     box-shadow: 0 -1px 1px -1px #fff;
+}
+
+.nav-toggle span {
+  color: #4c4c4c;
+}
+
+
+.nav-toggle span.fa-times { color: #fff; }
+
+.nav-toggle span.fa-times:hover { color: #fff; }
+
+.nav-toggle.show-nav {
+  top: 15px;
+  right: 20px;
+}
+        
+        
+   /******************** HOVER IMG INSTAGRAM ******************/             
+       
+        .image:hover{
+            opacity: 0.3;
+            background-color:black;
+        }
+        
+   
+
+    </style>
+
+</head>
+   
+
+<body>
+
+    <!-- *** TOPBAR ***
+ _________________________________________________________ -->
+    <div id="top">
+        <div class="container">
+            <div class="col-md-6 offer" data-animate="fadeInDown">
+                <!--<a href="#" class="btn btn-success btn-sm" data-animate-hover="shake">Ofertas</a>  <a href="#">35% off </a>-->
+            </div>
+            <div class="col-md-6" data-animate="fadeInDown">
+                <ul class="menu">
+                    <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
+                    </li>
+                    <li><a href="register.html">Registro</a>
+                    </li>
+                    <li><a href="register.html">Contátanos</a>
+                    
+                     <a href="#" class="facebook external" data-animate-hover="shake"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="twitter external" data-animate-hover="shake"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="instagram external" data-animate-hover="shake"><i class="fa fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="Login">Usario Datos</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="customer-orders.html" method="post">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="email-modal" placeholder="email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="password-modal" placeholder="password">
+                            </div>
+
+                            <p class="text-center">
+                                <button class="btn btn-primary"><i class="fa fa-sign-in"></i> Log in</button>
+                            </p>
+
+                        </form>
+
+                        <p class="text-center text-muted">¿Aún no estas registrado?</p>
+                        <p class="text-center text-muted"><a href="register.html"><strong>Registrate Ahora</strong></a>! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tristique</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- *** TOP BAR END *** -->
+
+    <!-- *** NAVBAR ***
+ _________________________________________________________ -->
+
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+        <div class="container">
+            <div class="navbar-header">
+
+                <a class="navbar-brand home" href="index.html" data-animate-hover="bounce">
+                    <img src="img/logo.png" alt="Obaju logo" class="hidden-xs">
+                    <img src="img/logo-small.png" alt="Obaju logo" class="visible-xs"><span class="sr-only">Obaju - go to homepage</span>
+                </a>
+                <div class="navbar-buttons">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-align-justify"></i>
+                    </button>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#search">
+                        <span class="sr-only">Toggle search</span>
+                        <i class="fa fa-search"></i>
+                    </button>
+                    <a class=" nav-toggle btn btn-default navbar-toggle" href="#">
+                        <i class="fa fa-shopping-cart"></i>  <span class="hidden-xs">3 artí</span>
+                    </a>
+                </div>
+            </div>
+            
+            
+            <!--/.navbar-header -->
+
+            <div class="navbar-collapse collapse" id="navigation">
+
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="active"><a href="index.html">Home</a>
+                    </li>
+                     <li><a href="ayuda2.html">¿Cómo es el proceso?</a>
+                    </li>
+    
+                    
+                </ul>
+
+            </div>
+            <!--/.nav-collapse -->
+
+            <div class="navbar-buttons">
+
+                <div class="navbar-collapse collapse right" id="basket-overview">
+                    <a href="#" class="nav-toggle btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span class="hidden-sm"></span></a>
+                </div>
+                <div id="site-wrapper">
+                  <nav class="menu2" role="navigation">
+                    <h3>Tu Carrito</h3>
+                      <hr/>
+
+                        <div class="1 articulo">
+                            <div class="col-md-4 col-s-4 col-xs-4">
+                                <img class="img-responsive logoGris" src="img/3.jpg" alt="Partners">
+                            </div>
+                            <div class="col-md-4 col-s-4 col-xs-4">
+                                <h5>Blusa Rosa Listones</h5>
+                                <input type="number" value="2" class="form-control"> 
+                            </div>
+                            <div class="col-md-4 col-md-push-2 col-xs-4 col-xs-push-2">
+                                <a href="#"><i class="fa fa-trash-o"></i></a>
+                            </div>
+                            <div class="precio col-md-4 col-md-push-2 col-xs-4 col-xs-push-2" style="margin-top:40px;">
+                                <p>$500</p> 
+                            </div><br/>   
+                        </div>
+            <!--<div class="text-center">
+    <p>Elige tu talla</p>
+          <ul>
+                 <li><a href="#"class="btn btn-default">EXT CH</a></li>
+                 <li><a href="#"class="btn btn-default">CH</a></li>
+                 <li><a href="#"class="btn btn-default">M</a></li>
+                <li><a href="#"class="btn btn-default">G</a></li>
+          </ul>
+  
+   </div>-->
+                      
+                      <div class="separador" style="box-shadow: 0 -1px 1px -1px #fff; padding:1px; margin-top:100px">
+           
+            <div class="2 articulo" style="margin-top:20px;" >
+              
+                    <div class="col-md-4 col-s-4 col-xs-4">
+                                <img class="img-responsive logoGris" src="img/4.jpg" alt="Partners">
+                            </div>
+                            <div class="col-md-4 col-s-4 col-xs-4">
+                                <h5>Blusa Rosa Listones</h5>
+                                <input type="number" value="2" class="form-control"> 
+                            </div>
+                            <div class="col-md-4 col-md-push-2 col-xs-4 col-xs-push-2">
+                                <a href="#"><i class="fa fa-trash-o"></i></a>
+                            </div>
+                            <div class="precio col-md-4 col-md-push-2 col-xs-4 col-xs-push-2" style="margin-top:40px;">
+                                <p>$250</p> 
+                            </div><br/>  
+            </div>
+                           </div>
+                         
+             
+                
+                
+                <div class="Subtotal" style="margin-top:400px;" >
+                       <hr/>
+              <h3>Subtotal:</h3>
+                    <div class="col-md-4 col-md-push-7" style="margin-top:-76px;">
+                                <h3>$750</h3> 
+                            </div>  
+                    <div class="col-md-4 col-md-push-7" >
+                                
+                                <a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Comprar</a>
+                            </div>
+           
+            </div>
+            
+                    
+            </nav>
+            </div>      
+                <!--/.nav-collapse -->
+
+                <div class="navbar-collapse collapse right" id="search-not-mobile">
+                    <button type="button" class="btn navbar-btn btn-primary" data-toggle="collapse" data-target="#search">
+                        <span class="sr-only">Toggle search</span>
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="collapse clearfix" id="search">
+
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+
+			<button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
+
+		    </span>
+                    </div>
+                </form>
+
+            </div>
+            <!--/.nav-collapse -->
+
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /#navbar -->
+
+    <!-- *** NAVBAR END *** -->
+    
+    
+    
+      <!-- ***CAROUSEL***
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top:-50px;">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+           <li data-target="#myCarousel" data-slide-to="4"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox" >
+        <div class="item active">
+         <img class="first-slide" src="img/CARRUSEL3.jpg" alt="First slide"  alt="img" class="img-responsive">
+            <div class="container">               
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" src="img/CARRUSEL4.jpg"  alt="Second slide" class="img_responsive" >
+          <div class="container">
+             
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="img/CARRUSEL5.jpg" alt="Third slide" class="img_responsive">
+          <div class="container">
+          </div>
+        </div>
+          
+           <div class="item">
+          <img class="fourth-slide" src="img/CARRUSEL2.jpg" alt="Fourth slide" >
+          <div class="container" class="img_responsive">
+          </div>
+        </div>
+     
+        
+             <div class="item">
+          <img class="fifth-slide" src="img/CARRUSEL1.jpg" alt="Fifth slide" >
+          <div class="container" class="img_responsive">
+          </div>
+        </div>
+      </div>
+        
+
+   
+    </div><!-- /.carousel -->
+      
+ 
+      
+           
+
+
+           
+
+            <!-- *** HOT PRODUCT SLIDESHOW ***
+ _________________________________________________________ -->
+         
+     <div id="all">
+
+    <div id="hot">
+        <!--<div class="box">
+                    <div class="container">
+                        <div class="col-md-12">
+                            <h2 style="color:pink;"><strong>LO MÁS VENDIDO</strong></h2>
+                        </div>
+                    </div>
+                </div>-->
+        <div class="text-center" data-animate="fadeInUpBig" style="margin-top:100px;"><h2 style="color:pink; font-weight:400;">PRUEBA TU BOLSA EN REALIDAD AUMENTADA</h2></div>
+                <div class="container" data-animate="fadeInUpBig">
+                    <div class="product-slider">
+                        
+                   <!-- Producto1 -->     
+                   <div class="">                 
+                        <a class="thumbnail2" href="#"  style="box-shadow: 1px 1px 8px #888888;">
+                            <div  data-animated="fadeInUp" class="partner-logo to-animate-2" onmouseover="javascript: MostrarLogo(this);" onmouseout="javascript: QuitarLogo(this);">
+                               <img class="img-responsive logoGris" src="img/6.jpg" alt="Partners">
+                                <img class="img-responsive logoColor" src="img/6.1.jpg" alt="Partners" > 
+                            </div>
+                            <div class="text-center">
+                                <h5>Blusa Cordones</h5>
+                                <p>Precio: <small><strike>$330</strike></small> $250</p>
+                            </div>
+                        </a>
+                            <div class="text-center">
+                                <a href="detail2.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Prueba tu bolsa</a>
+                            </div>
+                    </div>   
+                  
+                    <!-- Producto2 -->
+                    <div class="ventas">                        
+                        <a class="thumbnail2" href="#"  style="box-shadow: 1px 1px 8px #888888;">
+                            <div  data-animated="fadeInUp" class="partner-logo to-animate-2" onmouseover="javascript: MostrarLogo(this);" onmouseout="javascript: QuitarLogo(this);">
+                                <img class="img-responsive logoGris" src="img/7.jpg" alt="Partners">
+                                <img class="img-responsive logoColor" src="img/7.1.jpg" alt="Partners" > 
+                            </div>
+                            <div class="text-center">
+                                <h5>Blusa Cordones</h5>
+                                <p>Precio: <small><strike>$330</strike></small> $250</p>
+                            </div>
+                        </a>
+                            <div class="text-center">
+                                <a href="detail2.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Prueba tu bolsa</a>
+                            </div>
+                                <div class="ribbon new">
+                                    <div class="theribbon">NUEVO</div>
+                                    <div class="ribbon-background"></div>
+                                </div>
+                    </div>
+
+                    <!-- Producto3 -->   
+                    <div class="ventas">
+                        <a class="thumbnail2" href="#"  style="box-shadow: 1px 1px 8px #888888;">
+                            <div  data-animated="fadeInUp" class="partner-logo to-animate-2" onmouseover="javascript: MostrarLogo(this);" onmouseout="javascript: QuitarLogo(this);">
+                                <img class="img-responsive logoGris" src="img/6.jpg" alt="Partners">
+                                <img class="img-responsive logoColor" src="img/6.1.jpg" alt="Partners" > 
+                            </div>
+                            <div class="text-center">
+                                <h5>Blusa Cordones</h5>
+                                <p>Precio: <small><strike>$330</strike></small> $250</p>
+                            </div>
+                        </a>
+                            <div class="text-center">
+                                 <a href="detail2.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Prueba tu bolsa</a>
+                            </div>
+                    </div>
+
+                    <!-- Producto4 -->   
+                    <div class="ventas">               
+                        <a class="thumbnail2" href="#"  style="box-shadow: 1px 1px 8px #888888;">
+                            <div  data-animated="fadeInUp" class="partner-logo to-animate-2" onmouseover="javascript: MostrarLogo(this);" onmouseout="javascript: QuitarLogo(this);">
+                                <img class="img-responsive logoGris" src="img/4.jpg" alt="Partners">
+                                <img class="img-responsive logoColor" src="img/4.1.jpg" alt="Partners" > 
+                            </div>
+                            <div class="text-center">
+                                <h5>Blusa Cordones</h5>
+                                <p>Precio: <small><strike>$330</strike></small> $250</p>
+                            </div>
+                        </a>
+                            <div class="text-center">
+                                <a href="detail.html"class="btn btn-default">Ver detalle</a>
+                                <a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Comprar</a>
+                            </div>
+                    </div>
+
+                    <!-- Producto5 -->                 
+                    <div class="ventas">       
+                        <a class="thumbnail2" href="#"  style="box-shadow: 1px 1px 8px #888888;">
+                            <div  data-animated="fadeInUp" class="partner-logo to-animate-2" onmouseover="javascript: MostrarLogo(this);" onmouseout="javascript: QuitarLogo(this);">
+                                <img class="img-responsive logoGris" src="img/3.jpg" alt="Partners">
+                                <img class="img-responsive logoColor" src="img/3.1.jpg" alt="Partners" > 
+                            </div>
+                            <div class="text-center">
+                                <h5>Blusa Cordones</h5>
+                                <p>Precio: <small><strike>$330</strike></small> $250</p>
+                            </div>
+                        </a>
+                            <div class="text-center">
+                                <a href="detail.html"class="btn btn-default">Ver detalle</a>
+                                <a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Comprar</a>
+                            </div>
+                            <!--ribbon -->
+                            <div class="ribbon new">
+                                <div class="theribbon">NUEVO</div>
+                                <div class="ribbon-background"></div>
+                            </div>
+                    </div>
+                    
+                    
+                    <!-- Producto6 -->      
+                    <div class="ventas">                                
+                        <a class="thumbnail2" href="#"  style="box-shadow: 1px 1px 8px #888888;">
+                            <div  data-animated="fadeInUp" class="partner-logo to-animate-2" onmouseover="javascript: MostrarLogo(this);" onmouseout="javascript: QuitarLogo(this);">
+                                <img class="img-responsive logoGris" src="img/8.jpg" alt="Partners">
+                                <img class="img-responsive logoColor" src="img/8.1.jpg" alt="Partners" > 
+                            </div>
+                            <div class="text-center">
+                                <h5>Blusa Cordones</h5>
+                                <p>Precio: <small><strike>$330</strike></small> $250</p>
+                            </div>
+                        </a>
+                            <div class="text-center">
+                                <a href="detail.html"class="btn btn-default">Ver detalle</a>
+                                <a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Comprar</a>
+                            </div>
+                    </div>
+                        
+                    <!-- Producto7 -->      
+                    <div class="ventas">                   
+                        <a class="thumbnail2" href="#"  style="box-shadow: 1px 1px 8px #888888;">
+                            <div  data-animated="fadeInUp" class="partner-logo to-animate-2" onmouseover="javascript: MostrarLogo(this);" onmouseout="javascript: QuitarLogo(this);">
+                                <img class="img-responsive logoGris" src="img/6.jpg" alt="Partners">
+                                <img class="img-responsive logoColor" src="img/6.1.jpg" alt="Partners" > 
+                            </div>
+                            <div class="text-center">
+                                <h5>Blusa Cordones</h5>
+                                <p>Precio: <small><strike>$330</strike></small> $250</p>
+                            </div>
+                        </a>
+                            <div class="text-center">
+                                <a href="detail.html"class="btn btn-default">Ver detalle</a>
+                                <a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Comprar</a>
+                            </div>
+                            <!-- /.ribbon -->
+                            <div class="ribbon sale">
+                                <div class="theribbon">DESCUENTO</div>
+                                <div class="ribbon-background"></div>
+                            </div>
+                            <div class="ribbon new">
+                                <div class="theribbon">NUEVO</div>
+                                <div class="ribbon-background"></div>
+                            </div>
+                            <div class="ribbon gift">
+                                <div class="theribbon">REGALO</div>
+                                <div class="ribbon-background"></div>
+                            </div>
+                    </div>
+
+                    <!-- Producto7 -->     
+                    <div class="ventas">
+                        <a class="thumbnail2" href="#"  style="box-shadow: 1px 1px 8px #888888;">
+                            <div  data-animated="fadeInUp" class="partner-logo to-animate-2" onmouseover="javascript: MostrarLogo(this);" onmouseout="javascript: QuitarLogo(this);">
+                                <img class="img-responsive logoGris" src="img/7.jpg" alt="Partners">
+                                <img class="img-responsive logoColor" src="img/7.1.jpg" alt="Partners" > 
+                            </div>
+                            <div class="text-center">
+                                <h5>Blusa Cordones</h5>
+                                <p>Precio: <small><strike>$330</strike></small> $250</p>
+                            </div>
+                        </a>
+                            <div class="text-center">
+                                <a href="detail.html"class="btn btn-default">Ver detalle</a>
+                                <a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Comprar</a>
+                            </div>
+                    </div>
+
+                </div>
+                <!-- /.product-slider -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /#hot -->
+
+        <!-- *** HOT END *** -->
+
+          
+
+       
+            
+           
+
+
+
+  
+
+
+            
+
+
+            
+            
+
+         
+
+
+
+        <!-- *** COPYRIGHT ***
+ _________________________________________________________ -->
+        <div id="copyright">
+            <div class="container">
+                <div class="col-md-6">
+                    <p class="pull-left">© 2017 Derechos Reservados.</p>
+
+                </div>
+                <div class="col-md-6">
+                    <p class="pull-right">Diseñado por <a href="#">Carolina R. Garnelo</a>
+                         <!-- Not removing these links is part of the license conditions of the template. Thanks for understanding :) If you want to use the template without the attribution links, you can do so after supporting further themes development at https://bootstrapious.com/donate  -->
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- *** COPYRIGHT END *** -->
+
+
+
+    </div>
+    <!-- /#all -->
+
+
+
+    
+
+    <!-- *** SCRIPTS TO INCLUDE ***
+ _________________________________________________________ -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/bootstrap-hover-dropdown.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/front.js"></script>
+   <script src="js/w.js"></script>
+<script>
+// Vars
+
+var wrapper    = $("#site-wrapper"),
+    menu2       = $(".menu2"),
+    menuLinks  = $(".menu ul li a"),
+    toggle     = $(".nav-toggle"),
+    toggleIcon = $(".nav-toggle span");
+
+function toggleThatNav() {
+  if (menu2.hasClass("show-nav")) {
+    if (!Modernizr.csstransforms) {
+      menu2.removeClass("show-nav");
+      toggle.removeClass("show-nav");
+      menu2.animate({
+        right: "-=300"
+      }, 500);
+      toggle.animate({
+        right: "-=300"
+      }, 500);
+    } else {
+      menu2.removeClass("show-nav");
+      toggle.removeClass("show-nav");
+    }
+    
+  } else {
+    if (!Modernizr.csstransforms) {
+      menu2.addClass("show-nav");
+      toggle.addClass("show-nav");
+      menu2.css("right", "0px");
+      toggle.css("right", "330px");
+    } else {
+      menu2.addClass("show-nav");
+      toggle.addClass("show-nav");
+    } 
+  }
+}
+
+function changeToggleClass() {
+  toggleIcon.toggleClass("fa-times");
+  toggleIcon.toggleClass("fa-bars");
+}
+
+$(function() {
+  toggle.on("click", function(e) {
+    e.stopPropagation();
+    e.preventDefault();
+    toggleThatNav();
+    changeToggleClass();
+  });
+    // Keyboard Esc event support
+  $(document).keyup(function(e) {
+    if (e.keyCode == 27) {
+      if (menu2.hasClass("show-nav")) {
+        if (!Modernizr.csstransforms) {
+          menu2.removeClass("show-nav");
+          toggle.removeClass("show-nav");
+          menu2.css("right", "-300px");
+          toggle.css("right", "30px");
+          changeToggleClass();
+        } else {
+          menu2.removeClass("show-nav");
+          toggle.removeClass("show-nav");
+          changeToggleClass();
+        }
+      }
+    } 
+  });
+});
+</script>
+
+
+
+
+
+
+</body>
+
+</html>
